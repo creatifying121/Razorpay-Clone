@@ -11,7 +11,8 @@
 </head>
 <body> 
     <div class="w-full overflow-hidden">
-        <div class="w-full h-[52px] bg-white relative">
+          <!-- banner start -->
+          <div class="w-full h-[52px] bg-white relative">
             <div
               class="w-0 h-0 absolute top-0 bottom-0 left-0 border-b-[52px] border-b-lightBlue border-r-[40px] border-r-transparent z-[14]"
             ></div>
@@ -52,9 +53,11 @@
               class="w-0 h-0 absolute top-0 bottom-0 right-0 border-t-[52px] border-t-lightBlue border-l-[40px] border-l-transparent z-[14]"
             ></div>
           </div>
+          <!-- banner end -->
         
-          <nav class="bg-deepBlue">
-            <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+          <!-- nav bar start -->
+          <nav style="background: linear-gradient(45deg, #02042b, #02042b 50%) ">
+            <div class="relative  max-w-[1080px] mx-auto flex items-center justify-between">
                 <!-- logo -->
                 <a href="#" class="cursor-pointer py-7 pr-7">
                     <img src="./images/logo.svg" alt="Razorpay Logo" width="125px" height="30px">
@@ -105,7 +108,40 @@
                     </button>
                 </div>
             </div>
-        </nav>
+          </nav>
+          <!-- nav bar end -->
+
+          <!-- hero section start -->
+          <section class="relative" style="background: linear-gradient(45deg, #02042b, #02042b 50%)">
+            <div class="w-10/12 max-w-[1080px] pt-16 flex justify-between items-center mx-auto">
+                <!-- left part start -->
+                <div class="max-w-[400px] flex flex-col gap-4">
+                    <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your business</h1>
+
+                    <div class="w-6 h-1 bg-greenLight mt-2 mb-4"></div>
+
+                    <p class="mb-6 font-mullish text-[18px] leading-7 text-white opacity-70">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</p>
+
+                    <button class="bg-lightBlue text-white w-[180px] font-mullish rounded-md font-bold hover:bg-lightBlue500 transition-all duration-200 py-[15px]">
+                        Sign Up Now
+                        <svg class="inline w-3 h-3 ml-1.5 text-lightBlue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- left part end -->
+
+                <!-- right part start -->
+                <img src="./images/hero-illustration.jpg" alt="" class="max-w-[550px]">
+                <!-- right part end -->
+            </div>
+
+            <!-- triangular shape part -->
+            <div>
+                <img src="./images/hero-shape.svg" alt="">
+            </div>
+          </section>
+          <!-- hero section end -->
     </div>
 </body>
 </html>
