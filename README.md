@@ -6,7 +6,7 @@ This website is a static clone of India's popular Payment Gateway, Razorpay. I h
 <br>
 <br>
 
-## 📌 **See it Live:** <a href="#">**Click Here** 🚀</a>
+## 📌 **See it Live:** <a href="#">**Click Here** 🚀</a> (Will be Live soon)
 
 <br>
 
