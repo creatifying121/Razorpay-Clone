@@ -1,12 +1,12 @@
 ## ⭐ Razorpay Clone ⭐
 
-This website is a static clone of India's popular Payment Gateway, Razorpay.
+This website is a static clone of India's popular Payment Gateway, Razorpay. I have tried my best to mimic as much as possible using a very dynamic utility-first CSS Framework **Tailwind CSS**. I hope you will love it.
 
 **This Site is Fully Responsive**
 <br>
 <br>
 
-## 📌 **See it Live:** <a href="#">**Visit Now** 🚀</a>
+## 📌 **See it Live:** <a href="#">**Click Here** 🚀</a>
 
 <br>
 
