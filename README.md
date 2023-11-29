@@ -20,4 +20,4 @@ This website is a static clone of India's popular Payment Gateway, Razorpay. I h
 
 ## 📬 Let's Connect
 
-- **LinkedIn** - [Indra Shekhar](https://www.linkedin.com/in/shivani111/)
+- **LinkedIn** - [Shivani Raichandani](https://www.linkedin.com/in/shivani111/)
