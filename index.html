@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon library -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
     <link rel="stylesheet" href="main.css">
 
     <style>
@@ -129,7 +139,7 @@
 
                     <p class="mb-6 font-mullish text-[18px] leading-7 text-white opacity-70">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</p>
 
-                    <button class="bg-lightBlue text-white w-[180px] font-mullish rounded-md font-bold hover:bg-lightBlue500 transition-all duration-200 py-[15px]">
+                    <button class="bg-lightBlue text-white w-fit px-5 font-mullish rounded-md font-bold hover:bg-lightBlue500 transition-all duration-200 py-[15px]">
                         Sign Up Now
                         <svg class="inline w-3 h-3 ml-1.5 text-lightBlue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
@@ -151,49 +161,92 @@
           <!-- hero section end -->
 
           <!-- next section start -->
-          <section class="relative mt[190px] overflow-hidden">
+          <section class="relative overflow-hidden">
             <!-- dotted images start -->
-            <img src="./images/feature-section1-dottedrows.png" alt="dotted image 1" loading="lazy" width="233px" height="167px" class="absolute -top-32 left-40 inline-block">
+            <img src="./images/feature-section1-dottedrows.png" alt="dotted image 1" loading="lazy" 
+            width="233px" height="167px" 
+            class="absolute -top-32 left-40 inline-block">
 
-            <!-- <img src="./images/feature-section1-dottedrows.png" alt="dotted image 2" loading="lazy" width="233" height="167"> -->
+            <img src="./images/feature-section1-dottedrows.png" alt="dotted image 2" loading="lazy" 
+            width="233" height="167"
+            class="absolute top-12 right-0 inline-block rotate-180">
             <!-- dotted images end -->
 
             <!-- heading and underline div -->
-            <div>
-              <h2>Accept Payments with Razorpay Payment Suite</h2>
-              <div></div>
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+              <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold">
+                Accept Payments with Razorpay Payment Suite
+              </h2>
+              <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-[5rem]"></div>
 
               <!-- content box div -->
-              <div>
+              <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
                 <!-- left part -->
-                <div>
-                  <h3>Supercharge your business with the all&dash;powerful <span>Payment Gateway</span></h3>
-                  <ul>
-                    <li>100+ Payment Methods</li>
-                    <li>Industry Leading Success Rate</li>
-                    <li>Superior Checkout Experience</li>
-                    <li>Easy to Integrate</li>
-                    <li>Instant Settlements from day 1</li>
-                    <li>In-depth Reporting and Insights</li>
+                <div class="flex flex-col justify-between w-fit">
+                  <h3 class="font-mullish text-[28px] leading-10 font-extrabold max-w-[500px]">
+                    Supercharge your business with the all&dash;powerful <span class="text-lightBlue">Payment Gateway</span>
+                  </h3>
+                  <ul class="space-y-2">
+                    <li class="font-mullish flex items-center space-x-2">
+                      <i data-feather="check" class="text-greenLight"></i>
+                      <span>100+ Payment Methods</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-2">
+                      <i data-feather="check" class="text-greenLight"></i>
+                      <span>Industry Leading Success Rate</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-2">
+                      <i data-feather="check" class="text-greenLight"></i>
+                      <span>Superior Checkout Experience</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-2">
+                      <i data-feather="check" class="text-greenLight"></i>
+                      <span>Easy to Integrate</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-2">
+                      <i data-feather="check" class="text-greenLight"></i>
+                      <span>Instant Settlements from day 1</span>
+                    </li>
+                    <li class="font-mullish flex items-center space-x-2">
+                      <i data-feather="check" class="text-greenLight"></i>
+                      <span>In-depth Reporting and Insights</span>
+                    </li>
                   </ul>
 
                   <!-- button and hyperlink -->
-                  <div>
-                    <button>Sign Up Now</button>
+                  <div class="flex flex-row items-center space-x-4">
+                    <button class="bg-lightBlue text-white w-fit font-mullish rounded-md font-bold hover:bg-lightBlue500 transition-all duration-200 py-[15px] px-5">
+                      Sign Up Now
+                      <svg class="inline w-3 h-3 ml-1.5 text-lightBlue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                      </svg>
+                    </button>
                     <!-- hyperlink part -->
-                    <div>
-                      <a href="">Know More</a>
-                      <i></i>
+                    <div class="flex items-center cursor-pointer group">
+                      <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
+                      <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                     </div>
                   </div>
                 </div>
                 <!-- left part end -->
 
                 <!-- background image -->
-                <img src="./images/payment-suite.png" alt="bg image in feature section">
+                <img src="./images/payment-suite.png" 
+                alt="bg image in feature section"
+                class="absolute max-w-[600px] right-0 bottom-0"
+                >
               </div>
             </div>
           </section>
           <!-- next section end -->
+
+          <!-- card section start -->
+          
+          <!-- card section end -->
+
+          <script>
+            // feather icons < - - - https://github.com/feathericons/feather#feather
+            feather.replace();
+          </script>
 </body>
 </html>
