@@ -24,6 +24,26 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        #card:hover > #imgCard{
+          background: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+          transition: 0.2s ease;
+        }
+
+        .curveImg{
+          background: url('https://razorpay.com/build/browser/static/wave-blue.3362585e.svg');
+          height: 3.5rem;
+          width: 5rem;
+          bottom: 1rem;
+          right: 0;
+          background-position: center;
+          background-size: cover;
+        }
+
+        #card:hover > #content > .curveImg{
+          opacity: 1;
+          transition: 0.2s ease;
+        }
     </style>
     <title>Razorpay</title>
 </head>
@@ -238,11 +258,12 @@
               </div>
 
                <!-- card part start -->
-                <div class="w-full grid grid-cols-3 gap-8 mt-[4rem]">
+                <div class="relative w-full grid grid-cols-3 gap-8 mt-[4rem]">
                   <!-- box1 start -->
-                  <div class="w-full min-h-[15rem] relative cursor-pointer">
+                  <div class="w-full min-h-[15rem] relative cursor-pointer" id="card">
                     <img src="./images/payment-link-icon.svg" alt="bg card 1"
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200"
+                    id="imgCard">
 
                     <!-- shape of the box - using svg -->
                     <svg
@@ -250,7 +271,7 @@
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="none"
                           class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                          style="stroke-opacity: 0.15"
+                          style="stroke-opacity: 0.15;"
                     >
                     <path
                           d="m 0 6 
@@ -270,7 +291,7 @@
                     <!-- shape of the box - using svg -->
 
                     <!-- box content start -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" id="content">
                       <!-- text part start -->
                       <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
@@ -284,16 +305,21 @@
                         <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                       </div>
                       <!-- hyperlink part end -->
+                      <!-- curve image start -->
+                      <div class="curveImg absolute opacity-0"><span class="text-white select-none">a</span></div>
+                      <!-- curve image end -->
+                      
+                      
                     </div>
                     <!-- box content end -->
-
                   </div>
                   <!-- box1 end -->
 
                   <!-- box2 start -->
-                  <div class="w-full min-h-[15rem] relative cursor-pointer">
+                  <div class="w-full min-h-[15rem] relative cursor-pointer" id="card">
                     <img src="./images/payment-link-icon.svg" alt="bg card 1"
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200"
+                    id="imgCard">
 
                     <!-- shape of the box - using svg -->
                     <svg
@@ -301,7 +327,7 @@
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="none"
                           class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                          style="stroke-opacity: 0.15"
+                          style="stroke-opacity: 0.15;"
                     >
                     <path
                           d="m 0 6 
@@ -321,11 +347,11 @@
                     <!-- shape of the box - using svg -->
 
                     <!-- box content start -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" id="content">
                       <!-- text part start -->
                       <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
-                        <p class="mt-6 font-mullish text-grayText">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                        <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
                       </div>
                       <!-- text part end -->
 
@@ -335,16 +361,21 @@
                         <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                       </div>
                       <!-- hyperlink part end -->
+                      <!-- curve image start -->
+                      <div class="curveImg absolute opacity-0"><span class="text-white select-none">a</span></div>
+                      <!-- curve image end -->
+                      
+                      
                     </div>
                     <!-- box content end -->
-
                   </div>
                   <!-- box2 end -->
 
                   <!-- box3 start -->
-                  <div class="w-full min-h-[15rem] relative cursor-pointer">
+                  <div class="w-full min-h-[15rem] relative cursor-pointer" id="card">
                     <img src="./images/payment-link-icon.svg" alt="bg card 1"
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200"
+                    id="imgCard">
 
                     <!-- shape of the box - using svg -->
                     <svg
@@ -352,7 +383,7 @@
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="none"
                           class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                          style="stroke-opacity: 0.15"
+                          style="stroke-opacity: 0.15;"
                     >
                     <path
                           d="m 0 6 
@@ -372,11 +403,11 @@
                     <!-- shape of the box - using svg -->
 
                     <!-- box content start -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" id="content">
                       <!-- text part start -->
                       <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
-                        <p class="font-mullish mt-6 text-grayText">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                        <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
                       </div>
                       <!-- text part end -->
 
@@ -386,16 +417,21 @@
                         <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                       </div>
                       <!-- hyperlink part end -->
+                      <!-- curve image start -->
+                      <div class="curveImg absolute opacity-0"><span class="text-white select-none">a</span></div>
+                      <!-- curve image end -->
+                      
+                      
                     </div>
                     <!-- box content end -->
-
                   </div>
                   <!-- box3 end -->
 
                   <!-- box4 start -->
-                  <div class="w-full min-h-[15rem] relative cursor-pointer">
+                  <div class="w-full min-h-[15rem] relative cursor-pointer" id="card">
                     <img src="./images/payment-link-icon.svg" alt="bg card 1"
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200"
+                    id="imgCard">
 
                     <!-- shape of the box - using svg -->
                     <svg
@@ -403,7 +439,7 @@
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="none"
                           class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                          style="stroke-opacity: 0.15"
+                          style="stroke-opacity: 0.15;"
                     >
                     <path
                           d="m 0 6 
@@ -423,11 +459,11 @@
                     <!-- shape of the box - using svg -->
 
                     <!-- box content start -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" id="content">
                       <!-- text part start -->
                       <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
-                        <p class="font-mullish mt-6 text-grayText">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                        <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
                       </div>
                       <!-- text part end -->
 
@@ -437,16 +473,21 @@
                         <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                       </div>
                       <!-- hyperlink part end -->
+                      <!-- curve image start -->
+                      <div class="curveImg absolute opacity-0"><span class="text-white select-none">a</span></div>
+                      <!-- curve image end -->
+                      
+                      
                     </div>
                     <!-- box content end -->
-
                   </div>
                   <!-- box4 end -->
 
                   <!-- box5 start -->
-                  <div class="w-full min-h-[15rem] relative cursor-pointer">
+                  <div class="w-full min-h-[15rem] relative cursor-pointer" id="card">
                     <img src="./images/payment-link-icon.svg" alt="bg card 1"
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200"
+                    id="imgCard">
 
                     <!-- shape of the box - using svg -->
                     <svg
@@ -454,7 +495,7 @@
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="none"
                           class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                          style="stroke-opacity: 0.15"
+                          style="stroke-opacity: 0.15;"
                     >
                     <path
                           d="m 0 6 
@@ -474,11 +515,11 @@
                     <!-- shape of the box - using svg -->
 
                     <!-- box content start -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" id="content">
                       <!-- text part start -->
                       <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
-                        <p class="font-mullish mt-6 text-grayText">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                        <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
                       </div>
                       <!-- text part end -->
 
@@ -488,16 +529,21 @@
                         <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                       </div>
                       <!-- hyperlink part end -->
+                      <!-- curve image start -->
+                      <div class="curveImg absolute opacity-0"><span class="text-white select-none">a</span></div>
+                      <!-- curve image end -->
+                      
+                      
                     </div>
                     <!-- box content end -->
-
                   </div>
                   <!-- box5 end -->
 
                   <!-- box6 start -->
-                  <div class="w-full min-h-[15rem] relative cursor-pointer">
+                  <div class="w-full min-h-[15rem] relative cursor-pointer" id="card">
                     <img src="./images/payment-link-icon.svg" alt="bg card 1"
-                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+                    class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8] transition-all duration-200"
+                    id="imgCard">
 
                     <!-- shape of the box - using svg -->
                     <svg
@@ -505,7 +551,7 @@
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="none"
                           class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                          style="stroke-opacity: 0.15"
+                          style="stroke-opacity: 0.15;"
                     >
                     <path
                           d="m 0 6 
@@ -525,11 +571,11 @@
                     <!-- shape of the box - using svg -->
 
                     <!-- box content start -->
-                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" id="content">
                       <!-- text part start -->
                       <div>
                         <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]">Payment Links</h3>
-                        <p class="font-mullish mt-6 text-grayText">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
+                        <p class="font-mullish text-grayText mt-6">Share payment link via an email, SMS, messenger, chatbot etc. and get paid immediately</p>
                       </div>
                       <!-- text part end -->
 
@@ -539,9 +585,13 @@
                         <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                       </div>
                       <!-- hyperlink part end -->
+                      <!-- curve image start -->
+                      <div class="curveImg absolute opacity-0"><span class="text-white select-none">a</span></div>
+                      <!-- curve image end -->
+                      
+                      
                     </div>
                     <!-- box content end -->
-
                   </div>
                   <!-- box6 end -->
                 </div>
