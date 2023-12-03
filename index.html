@@ -622,20 +622,21 @@
               <!-- line wala div end -->
 
               <!-- container div start -->
-              <div>
+              <div class="w-full min-h-[440px] flex flex-col relative">
                 <!-- side images start -->
                 <img src="./images/x-flame-1.png" alt="side image 1" loading="lazy"
-                class="absolute -top-[142px] -left-[140px] w-[200px]">
+                class="absolute -top-[142px] -left-[140px] w-[200px] z-10">
 
                 <img src="./images/x-flame-2.png" alt="side image 2" loading="lazy"
-                class="absolute w-[270px] top-[150px] -right-[180px]">
+                class="absolute w-[270px] top-[150px] -right-[180px] z-10">
                 <!-- side images end -->
 
                 <!-- content box start -->
-                  <div>
+                  <div class="relative w-full p-10 py-12 bg-[#181c2e] border rounded-md border-grayText border-opacity-50 z-20">
+                    
                     <!-- left part start -->
-                  <div>
-                    <h3>
+                  <div class="flex flex-col justify-between items-start h-full w-full gap-12 z-20">
+                    <h3 class="font-mullish text-[28px] text-white font-bold leading-10 max-w-[525px]">
                       Manage your company’s finances and supercharge your business banking with
                       <img src="./images/razorpayX.svg" alt="razorpay image" class="inline" width="168px" height="32px">
                     </h3>
@@ -660,28 +661,183 @@
                       </li>
                     </ul>
 
-                    <div>
-                      <button>
+                    <div class="flex flex-row w-full items-center space-x-4">
+                      <button
+                      class="relative bg-lightBlue text-white flex items-center justify-start py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 md:pr-[90px]"
+                      >
                         Sign Up
-                        
-                        <!-- <svg class="inline w-3 h-3 ml-1.5 text-lightBlue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                        </svg> -->
+                        <div class="w-12 h-[60px] bg-greenLight absolute opacity-95 right-6 skew-x-[20deg] flex justify-center items-center">
+                          <svg
+                          viewBox="0 0 24 24"
+                          focusable="false"
+                          class="w-[20px] h-[20px] -skew-x-[20deg]"
+                          >
+                          <path
+                          fill="currentColor"
+                          d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                          ></path>
+                          </svg>
+                        </div>
                       </button>
                       <!-- hyperlink part -->
-                      <div>
-                        <a href="#">Know More</a>
-                        <i></i>
+                      <div class="flex items-center cursor-pointer group">
+                        <a href="#" class="font-mullish font-extrabold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know More</a>
+                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"></i>
                       </div>
                     </div>
                   </div>
                   <!-- left part end -->
                   
                   <!-- background image start -->
-                  <img src="./images/buisness-banking.png" alt="business banking background image">
+                  <img src="./images/buisness-banking.png" 
+                  alt="business banking background image"
+                  loading="lazy"
+                  class="absolute max-w-[600px] right-0 bottom-0 z-5"
+                  >
                   <!-- background image end -->
-                </div>
+                  </div>
                 <!-- content box end -->
+
+                <!-- card part start -->
+                <div class="grid grid-cols-3 w-full gap-8 my-14">
+                  <!-- box1 start -->
+                  <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
+                    <!-- box icon -->
+                    <img src="images/current-icon.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200">
+                    <!-- box shape -->
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200" style="stroke-opacity: 0.8">
+                      <path d="m 0 6 
+                      a 6 6 0 0 1 6 -6 
+                      h 250.32501220703125 
+                      a 16 16 0 0 1 11 5 
+                      l 77 77 
+                      a 16 16 0 0 1 5 11 
+                      v 126 
+                      a 6 6 0 0 1 -6 6 
+                      h -337.32501220703125 
+                      a 6 6 0 0 1 -6 -6 
+                      z" fill="#181C2E"></path>
+                    </svg>
+                    <!-- box content -->
+                    <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                      <div>
+                        <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
+                          Current Account
+                        </h3>
+                        <p class="font-mullish text-grayText mt-6">
+                          Current accounts for fast-growing businesses, supported by the
+                          best-in-class technology
+                        </p>
+                      </div>
+                      <div class="flex items-center cursor-pointer place-items-end">
+                        <a href="#" class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-lightBlue500 transition-all duration-200"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- box1 end -->
+
+                  <!-- box2 start -->
+                  <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
+                    <!-- box icon -->
+                    <img src="images/capital-credit-icon.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200">
+                    <!-- box shape -->
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200" style="stroke-opacity: 0.8">
+                      <path d="m 0 6 
+                      a 6 6 0 0 1 6 -6 
+                      h 250.32501220703125 
+                      a 16 16 0 0 1 11 5 
+                      l 77 77 
+                      a 16 16 0 0 1 5 11 
+                      v 126 
+                      a 6 6 0 0 1 -6 6 
+                      h -337.32501220703125 
+                      a 6 6 0 0 1 -6 -6 
+                      z" fill="#181C2E"></path>
+                    </svg>
+                    <!-- box content -->
+                    <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                      <div>
+                        <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
+                          Payouts
+                        </h3>
+                        <p class="font-mullish text-grayText mt-6">
+                          Make simple, reliable & secure payouts to bank accounts, UPI IDs or wallets
+                        </p>
+                      </div>
+                      <div class="flex items-center cursor-pointer place-items-end">
+                        <a href="#" class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-lightBlue500 transition-all duration-200"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- box2 end -->
+
+                  <!-- box3 start -->
+                  <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
+                    <!-- box icon -->
+                    <img src="images/payouts-icon.svg" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200">
+                    <!-- box shape -->
+                    <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200" style="stroke-opacity: 0.8">
+                      <path d="m 0 6 
+                      a 6 6 0 0 1 6 -6 
+                      h 250.32501220703125 
+                      a 16 16 0 0 1 11 5 
+                      l 77 77 
+                      a 16 16 0 0 1 5 11 
+                      v 126 
+                      a 6 6 0 0 1 -6 6 
+                      h -337.32501220703125 
+                      a 6 6 0 0 1 -6 -6 
+                      z" fill="#181C2E"></path>
+                    </svg>
+                    <!-- box content -->
+                    <div class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                      <div>
+                        <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
+                          Payroll
+                        </h3>
+                        <p class="font-mullish text-grayText mt-6">
+                          Set your payroll and compliances like TDS, ESIC, PT, & PF on autopilot.
+                        </p>
+                      </div>
+                      <div class="flex items-center cursor-pointer place-items-end">
+                        <a href="#" class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-lightBlue500 transition-all duration-200"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- box3 end -->
+                  
+                </div>
+                <!-- card part end -->
+
+
+                <!-- demo-box start -->
+                <div class="flex flex-row w-full items-center justify-between border border-slate-700 mb-24 gap-y-6 p-8 rounded-md relative">
+                  <p class="text-white font-mullish text-xl ">Check out the live demo to learn how RazorpayX works.
+                    <span class="font-bold"> No sign-up required!</span>
+                  </p>
+
+                  <button
+                      class="relative bg-lightBlue text-white flex items-center justify-start py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 md:pr-[90px]"
+                      >
+                        Check out the demo
+                        <div class="w-12 h-[60px] bg-greenLight absolute opacity-95 right-6 skew-x-[20deg] flex justify-center items-center">
+                          <svg
+                          viewBox="0 0 24 24"
+                          focusable="false"
+                          class="w-[20px] h-[20px] -skew-x-[20deg]"
+                          >
+                          <path
+                          fill="currentColor"
+                          d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                          ></path>
+                          </svg>
+                        </div>
+                      </button>
+                </div>
+                <!-- demo-box end -->
               </div>
               <!-- container div end -->
             </div>
