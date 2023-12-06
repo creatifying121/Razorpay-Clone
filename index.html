@@ -56,6 +56,20 @@
           padding-top: 12rem;
           padding-bottom: 12rem;
         }
+
+        .moveImage{
+          animation: 30s infinite linear companiesAnimation;  
+        }
+
+        @keyframes companiesAnimation {
+          0% {
+            top: 0;
+          }
+
+          100% {
+            top: -160%;
+          }
+        }
     </style>
     <title>Razorpay</title>
 </head>
@@ -1060,8 +1074,8 @@
           <!-- core features section end -->
 
           <!-- animated image section start -->
-          <section class="bg-[#f2f8fe] relative pt-[16rem] pb-12 -mt-[200px]">
-            <div class="w-10/12 max-w-[1080px] mx-auto relative">
+          <section class="bg-[#f2f8fe] relative pt-[14rem] pb-12 -mt-[200px]">
+            <div class="w-10/12 max-w-[1080px] mx-auto relative flex">
               <!-- left part start -->
               <div class="flex flex-col justify-center max-w-[440px]">
                 <h3 class="font-mullish font-extrabold text-2xl text-deepBlue">Join the 50,00,000+ businesses using Razorpay</h3>
@@ -1079,11 +1093,19 @@
               <!-- left part end -->
 
               <!-- right part animated image start -->
-              <div>
+              <div class="h-[500px] w-[500px] relative overflow-y-hidden ml-[100px]">
+                <div style="background: linear-gradient(180deg, #f4f8ff, #fff0);"
+                class="absolute w-full h-[150px] top-0 z-10"
+                ></div>
                 <img src="./images/companies.png" 
                 alt=""
                 loading="lazy"
+                width="500px"
+                class="absolute moveImage z-100"
                 >
+                <div style="background: linear-gradient(0deg, #f4f8ff, #fff0);"
+                class="absolute w-full h-[150px] bottom-0"
+                ></div>
               </div>
               <!-- right part animated image end -->
             </div>
