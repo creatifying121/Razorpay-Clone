@@ -6,7 +6,7 @@ This website is a static clone of India's popular Payment Gateway, Razorpay. I h
 <br>
 <br>
 
-## 📌 **See it Live:** <a href="https://657d5185db740a0008782c10--verdant-dango-fe01c5.netlify.app/">**Click Here** 🚀</a>
+## 📌 **See it Live:** <a href="https://657d5185db740a0008782c10--verdant-dango-fe01c5.netlify.app/" target="_blank">**Click Here** 🚀</a>
 
 <br>
 
